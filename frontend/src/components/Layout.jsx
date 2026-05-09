@@ -31,7 +31,7 @@ export default function Layout() {
       <aside className="sidebar">
         <div className="sidebar-logo">
           <div className="sidebar-logo-icon">M$</div>
-          <div className="sidebar-logo-text">MoneyHub</div>
+          <div className="sidebar-logo-text">Nexpent</div>
         </div>
         <nav>
           {navItems.map((item) => (

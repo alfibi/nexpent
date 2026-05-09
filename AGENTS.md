@@ -1,4 +1,4 @@
-# MoneyHub Agent Guide
+# Nexpent Agent Guide
 
 ## Setup
 - Backend: `cd backend && pip install -r requirements.txt`

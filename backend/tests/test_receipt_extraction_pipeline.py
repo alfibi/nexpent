@@ -1,6 +1,6 @@
 import os
 
-os.environ.setdefault("DATABASE_URL", "sqlite:///./backend/tests/test_moneyhub_receipt_pipeline.db")
+os.environ.setdefault("DATABASE_URL", "sqlite:///./backend/tests/test_nexpent_receipt_pipeline.db")
 os.environ.setdefault("JWT_SECRET_KEY", "test-secret-for-receipt-pipeline")
 
 import pytest

@@ -22,7 +22,7 @@ APP_ENV = os.getenv("APP_ENV", "development").strip().lower()
 
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
-    "postgresql://postgres:postgres@localhost:5432/moneyhub",
+    "postgresql://postgres:postgres@localhost:5432/nexpent",
 )
 REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
 DB_POOL_SIZE = int(os.getenv("DB_POOL_SIZE", "10"))

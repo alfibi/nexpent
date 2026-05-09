@@ -75,7 +75,7 @@ export default function Advisor() {
       <div style={{ marginBottom: "20px", marginTop: "24px", height: "300px", overflowY: "auto", display: "flex", flexDirection: "column", gap: "10px", paddingRight: "10px" }}>
         {chatHistory.map((msg, idx) => (
           <div key={idx} className="chat-msg" style={{ textAlign: msg.role === 'user' ? 'right' : 'left' }}>
-            {msg.role === 'assistant' && <div className="chat-name">MoneyHub AI</div>}
+            {msg.role === 'assistant' && <div className="chat-name">Nexpent AI</div>}
             <div className={`chat-bubble chat-${msg.role === 'user' ? 'user' : 'ai'}`}>
               {msg.content}
             </div>
@@ -83,7 +83,7 @@ export default function Advisor() {
         ))}
         {loadingChat && (
           <div className="chat-msg">
-            <div className="chat-name">MoneyHub AI</div>
+            <div className="chat-name">Nexpent AI</div>
             <div className="chat-bubble chat-ai">
               <span className="pulse" style={{ display: 'inline-block', width: '8px', height: '8px', background: 'var(--text2)', borderRadius: '50%', marginRight: '4px' }}></span>
               <span className="pulse" style={{ display: 'inline-block', width: '8px', height: '8px', background: 'var(--text2)', borderRadius: '50%', marginRight: '4px', animationDelay: '0.2s' }}></span>

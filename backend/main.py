@@ -62,7 +62,7 @@ from middleware.rate_limit import RateLimitMiddleware
 # ---------------------------------------------------------
 # APP
 # ---------------------------------------------------------
-app = FastAPI(title="MoneyHub API")
+app = FastAPI(title="Nexpent API")
 
 if APP_ENV == "development":
     app.add_middleware(

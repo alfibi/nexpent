@@ -1,6 +1,6 @@
 import { apiRequest } from "./api";
 
-const STORAGE_PREFIX = "moneyhub.resource.";
+const STORAGE_PREFIX = "nexpent.resource.";
 const inFlightRequests = new Map();
 const resourceVersions = new Map();
 

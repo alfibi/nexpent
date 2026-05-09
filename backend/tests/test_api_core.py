@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-os.environ.setdefault("DATABASE_URL", "sqlite:///./backend/tests/test_moneyhub.db")
+os.environ.setdefault("DATABASE_URL", "sqlite:///./backend/tests/test_nexpent.db")
 os.environ.setdefault("JWT_SECRET_KEY", "test-secret-for-api-tests")
 
 from fastapi.testclient import TestClient
@@ -11,7 +11,7 @@ from main import app
 
 
 def setup_module():
-    db_path = Path("backend/tests/test_moneyhub.db")
+    db_path = Path("backend/tests/test_nexpent.db")
     if db_path.exists():
         db_path.unlink()
     Base.metadata.drop_all(bind=engine)
@@ -20,7 +20,7 @@ def setup_module():
 
 def teardown_module():
     Base.metadata.drop_all(bind=engine)
-    db_path = Path("backend/tests/test_moneyhub.db")
+    db_path = Path("backend/tests/test_nexpent.db")
     if db_path.exists():
         db_path.unlink()
 

@@ -1,10 +1,10 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
-import { buildMoneyHubNotifications } from "../lib/notificationRules";
+import { buildNexpentNotifications } from "../lib/notificationRules";
 import { loadCachedResource, readCachedResource } from "../lib/resourceCache";
 
 const NotificationContext = createContext(null);
-const READ_STORAGE_KEY = "moneyhub.notifications.read";
-const PUSHED_STORAGE_KEY = "moneyhub.notifications.pushed";
+const READ_STORAGE_KEY = "nexpent.notifications.read";
+const PUSHED_STORAGE_KEY = "nexpent.notifications.pushed";
 
 function readStoredSet(key) {
   if (typeof window === "undefined") {
@@ -47,7 +47,7 @@ export function NotificationProvider({ children }) {
         loadCachedResource("financialToolsOverview", options).catch(() => readCachedResource("financialToolsOverview") || null)
       ]);
 
-      const nextNotifications = buildMoneyHubNotifications({
+      const nextNotifications = buildNexpentNotifications({
         overview,
         transactions: transactions?.transactions || [],
         aiInsights: aiInsights?.insights || [],
@@ -77,7 +77,7 @@ export function NotificationProvider({ children }) {
 
     for (const item of urgentNotifications.slice(0, 3)) {
       pushedIds.add(item.id);
-      new window.Notification(`MoneyHub: ${item.title}`, {
+      new window.Notification(`Nexpent: ${item.title}`, {
         body: item.message,
         tag: item.id
       });

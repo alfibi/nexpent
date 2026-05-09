@@ -290,7 +290,7 @@ export default function Profile() {
 
           <div className="profile-security-note">
             <ShieldCheck size={17} />
-            <span>Bank credentials stay out of MoneyHub. Connected provider tokens remain server-side.</span>
+            <span>Bank credentials stay out of Nexpent. Connected provider tokens remain server-side.</span>
           </div>
 
           <button type="button" className="btn-outline profile-command" onClick={() => setActivePanel("settings")}>

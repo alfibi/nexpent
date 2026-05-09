@@ -1,6 +1,6 @@
 # Architecture
 
-MoneyHub is a FastAPI + Next.js personal financial advisor app.
+Nexpent is a FastAPI + Next.js personal financial advisor app.
 
 ```mermaid
 flowchart TD

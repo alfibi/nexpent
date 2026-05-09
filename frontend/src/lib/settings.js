@@ -1,4 +1,4 @@
-const SETTINGS_STORAGE_KEY = "moneyhub.app.settings";
+const SETTINGS_STORAGE_KEY = "nexpent.app.settings";
 
 export const defaultAppSettings = {
   defaultCurrency: "USD",

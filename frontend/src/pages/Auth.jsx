@@ -38,7 +38,7 @@ export default function Auth() {
     <div className="auth-screen">
       <div className="auth-logo">
         <div className="auth-logo-mark" style={{ letterSpacing: "-0.03em" }}>M$</div>
-        <div style={{ fontFamily: "'Syne', sans-serif", fontSize: "28px", fontWeight: 800, color: "var(--text)" }}>MoneyHub</div>
+        <div style={{ fontFamily: "'Syne', sans-serif", fontSize: "28px", fontWeight: 800, color: "var(--text)" }}>Nexpent</div>
         <div style={{ fontSize: "14px", color: "var(--text3)", marginTop: "4px" }}>Your financial life, unified.</div>
       </div>
       

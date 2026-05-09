@@ -3,7 +3,7 @@ import { ApiError, apiRequest } from "../lib/api";
 import { clearCachedResources } from "../lib/resourceCache";
 
 const AuthContext = createContext(null);
-const SESSION_STORAGE_KEY = "moneyhub.auth.user";
+const SESSION_STORAGE_KEY = "nexpent.auth.user";
 
 function readStoredUser() {
   if (typeof window === "undefined") {

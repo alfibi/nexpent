@@ -14,7 +14,7 @@ function transactionLabel(transaction) {
   return transaction.merchant || transaction.primary_label || transaction.description || transaction.category || "Transaction";
 }
 
-export function buildMoneyHubNotifications({ overview, transactions = [], aiInsights = [], financialTools }) {
+export function buildNexpentNotifications({ overview, transactions = [], aiInsights = [], financialTools }) {
   const dashboard = overview?.dashboard || {};
   const summary = dashboard.summary || {};
   const monthlySummary = overview?.monthlySummary || {};
